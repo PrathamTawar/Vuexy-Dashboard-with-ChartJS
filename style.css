@@ -1,0 +1,502 @@
+:root
+{
+    --primary-color: rgb(242, 240, 245);
+    --accent-color: rgb(68, 188, 252);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--primary-color);
+}
+
+/* *----------------------NAV------------------------- */
+
+nav
+{
+    padding: 0 !important;
+    background-color: white;
+    flex-wrap: nowrap !important;
+}
+
+/* *----------------------LOGO------------------------- */
+.logoContainer {
+    border-right: solid var(--primary-color);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    min-width: 180px;
+    flex-wrap: wrap;
+}
+
+.logoContainer a {
+  margin: 0;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logoContainer p {
+    font-size: 1.1rem;
+    font-weight: 750;
+    margin: 0;
+    width: 50%;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    line-height: 1.2rem;
+}
+
+.logo {
+  height: 70px;
+  width: 80px;
+  border-radius: 25px;
+}
+/* !----------------------LOGO-OVER------------------------ */
+
+
+/* *----------------------SEARCH------------------------- */
+
+.searchContainer
+{
+    /* border: solid red; */
+    padding: 0 35px;
+    width: 100%;
+    height: 100px;
+
+    justify-content:space-between;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.searchForm
+{
+    height: 100%;
+    position: relative;
+    width: 40%;
+    /* border: solid green; */
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.magnifyIcon
+{
+    width: 30px;
+    opacity: 0.4;
+    position: absolute;
+    left: 2.5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.searchInpt
+{
+    padding-left: 50px;
+    height: 60%;
+    width: 100% !important;
+    border: solid var(--primary-color);
+    width: 40%;
+    background-color: rgb(225, 235, 245);
+}
+
+.searchInpt::placeholder
+{
+    opacity: 0.5;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+
+
+
+/* *----------------------DROPDOWN------------------------ */
+
+.dropdownBtn
+{
+    /* border: solid red; */
+    height: 60%;
+    width: 50%;
+    flex: 1;
+}
+
+.dropdownBtnLeft
+{
+    background-color: none;
+    padding: 0;
+    width: 1%;
+    border: solid var(--primary-color);
+    border-right: none;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--accent-color);
+}
+
+.dropdownBtnRight
+{
+    border: solid var(--primary-color);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+}
+/* !----------------------DROPDOWN-OVER------------------------ */
+/* !----------------------SEARCH-OVER------------------------ */
+
+
+
+
+/* *----------------------USER------------------------ */
+
+.navRight
+{
+    border-left: solid var(--primary-color);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+    width: 25%;
+    height: 100px;
+}
+
+.imgDiv
+{
+    position: relative;
+}
+
+.status
+{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(237, 203, 50);
+    border: solid rgb(255, 255, 255);
+}
+
+.pfp
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.userInfo
+{
+    display: flex;
+    /* border: solid red; */
+    height: 50%;
+    padding-top: 25px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.userInfo h4
+{
+    font-size: 1.2rem;
+}
+
+.userInfo p
+{
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+.dropdownPfp
+{
+    background-color: rgb(225, 235, 245);
+    border-radius: 36%;
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdownPfpBtn
+{
+    padding-left: 10px;
+    padding-right: 15px;
+    color: var(--accent-color);
+}
+/* !----------------------USER-OVER------------------------ */
+
+
+
+
+
+/* *-----------------------MAIN--------------------------- */
+
+main
+{
+    width: 100vw;
+    height: calc(100vh - 100px);
+
+    padding: 25px 50px;
+}
+
+/* *-------------------------NAV-LIST-------------------------- */
+
+.navList
+{
+    height: fit-content;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border-radius: 20px;
+
+    background-color: white;
+    overflow: hidden;
+}
+
+.navCard
+{
+    /* border: solid black; */
+    height: 70px;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    padding-right: 10px;
+
+    border-radius: 20px;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.navCard div
+{
+    height: auto;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.navCard img
+{
+    /* border: solid red; */
+    height: 40px;
+    width: 40px;
+    background-color: rgb(223, 229, 235);
+    border-radius: 25%;
+    padding: 5px;
+}
+
+.navCard p
+{
+    /* border: solid green; */
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.navCard:first-of-type
+{
+    background: linear-gradient(45deg, rgb(127, 189, 250), rgb(81, 160, 245));
+    color: white;
+}
+
+.navCard:first-of-type img
+{
+    background-color: white;
+}
+/* !-------------------------NAV-LIST-OVER------------------------- */
+
+
+
+/* *-------------------------GRID-LAYOUT-------------------------- */
+
+.gridLayout
+{
+    /* border: solid red; */
+    margin-top: 25px;
+    height: calc(100% - 100px);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 2fr 3fr 0.5fr;
+    gap: 25px;
+}
+
+.gridDivs
+{
+    border-radius: 36px;
+}
+
+/* !-----------------------GRID-LAYOUT-OVER----------------------- */
+
+
+
+/* *-------------------------REPORTS-------------------------- */
+.reports
+{
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 25px; 
+    overflow: auto;
+}
+
+.reports::-webkit-scrollbar
+{
+    display: none;
+}
+
+.title
+{
+    padding: 0 20px;
+    /* border: solid green; */
+    display: flex;
+    gap: 1rem;
+
+}
+
+.title h1
+{
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.title img
+{
+    height: 35px;
+    padding: 7px;
+    border-radius: 26%;
+    /* border: solid blue; */
+    background: linear-gradient(45deg, rgb(81, 160, 245), rgb(127, 189, 250), rgb(167, 205, 244));
+}
+
+.options
+{
+    /* border: solid red; */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options p
+{
+    margin: 0;
+    font-size: 0.8rem;
+    
+}
+
+.options img
+{
+    height: 35px;
+    padding: 7px;
+    background-color: rgb(90, 173, 250);
+    border-radius: 26%;
+}
+
+
+.options:nth-of-type(4)
+{
+    font-weight: 700;
+    color: var(--accent-color);
+    background-color: rgb(242, 246, 250);
+}
+
+/* !---------------------REPORTS-OVER------------------------- */
+
+
+
+/* *-------------------------INFO-CARDS-------------------------- */
+
+.infoCardContainer
+{
+    /* border: solid red; */
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.infoCard
+{
+    /* border: solid red; */
+    min-width: 22%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.infoCard img
+{
+    height: 70px;
+    padding: 15px;
+    border-radius: 36%;
+    background-color: rgb(253, 239, 221);
+}
+
+.info h4, p
+{
+    margin: 0;
+}
+
+.info h4
+{
+    font-size: 1.5rem;
+    font-weight: 750;
+}
+
+
+.info p
+{
+    font-size: 0.9rem;
+    font-weight: 500;
+    width: 175px;
+}
+
+/* !---------------------INFO-CARDS-OVER------------------------- */
+.graphContainer
+{
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-color: blue;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+
+.loadMore
+{
+    background-color: yellow;
+    grid-column-start: 2;
+    grid-column-end: 6;
+}
+/* !--------------------MAIN-OVER-------------------------- */
+
+
