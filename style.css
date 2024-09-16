@@ -444,14 +444,24 @@ main
 .infoCard
 {
     /* border: solid red; */
+    /* height: 80px; */
+    max-height: 100px;
     min-width: 22%;
     flex: 1;
     display: flex;
     align-items: center;
-    gap: 1rem;
+    column-gap: 1rem;
     padding: 15px 10px;
     border-radius: 20px;
     background-color: white;
+    transition: 0.3s;
+}
+
+.infoCard:hover
+{
+    transform: scale(1.08);
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 1px rgb(160, 175, 182);
 }
 
 .infoCard img
@@ -482,21 +492,153 @@ main
 }
 
 /* !---------------------INFO-CARDS-OVER------------------------- */
+
+
+
+
+
+/* *---------------------GRAPHS------------------------- */
 .graphContainer
 {
-    grid-row-start: 3;
-    grid-row-end: 6;
-    background-color: blue;
     grid-column-start: 2;
     grid-column-end: 6;
+    display: flex;
+
+    gap: 25px;
+    
 }
+
+.charts
+{
+    /* border: solid black; */
+    border-radius: 20px;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* *------------------------INVOICE------------------------ */
+
+.invoiceGraphInfo
+{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 100px;
+} 
+
+.invoiceGraphInfoHead
+{
+    /* border: solid; */
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.invoiceGraphInfoHead h4
+{
+    font-size: 1.3rem;
+    font-weight: 750;
+    margin: 0;
+}
+
+.graphDropdown
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.graphDropdown button
+{
+    border: solid var(--primary-color);
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+.graphDropdown p
+{
+    margin: 0;
+    font-size: 0.8rem;
+    color: rgb(178, 174, 174);
+}
+
+
+.invoiceGraphInfoIndicator
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 35%;
+    min-width: 200px;
+    font-size: 0.7rem;
+}
+
+.indicatorContainer
+{
+    gap: 0.2rem;
+    align-items: center;
+}
+
+.thisWeek
+{
+    background-color: var(--accent-color);
+    border-radius: 15%;
+    height: 25px;
+    width: 25px;
+}
+.lastWeek
+{
+    background-color: rgb(250, 85, 101);
+    border-radius: 15%;
+    height: 25px;
+    width: 25px;
+}
+
+.checkboxes
+{
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+#weighted
+{
+    background-color: rgb(138, 114, 247);
+}
+
+#won
+{
+    background-color: rgb(255, 199, 102);
+}
+
+/* !----------------------INVOICE-OVER--------------------- */
+
+
+/* *-------------------GRAPHS-OVER---------------------- */
 
 .loadMore
 {
-    background-color: yellow;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    background-color: white;
     grid-column-start: 2;
     grid-column-end: 6;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
 }
+
+.loadMore img
+{
+    height: 20px;
+}
+
+.loadMore p
+{
+    font-size: 0.8rem;
+    color: rgb(162, 159, 159);
+}
+
 /* !--------------------MAIN-OVER-------------------------- */
 
 
