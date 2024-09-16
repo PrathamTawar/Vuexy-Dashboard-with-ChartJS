@@ -642,3 +642,129 @@ main
 /* !--------------------MAIN-OVER-------------------------- */
 
 
+@media screen and (max-width: 1200px) {
+    .gridLayout {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .reports {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+    }
+
+    .infoCardContainer {
+        grid-row: 2;
+        grid-column: 1 / span 2;
+    }
+
+    .graphContainer {
+        grid-row: 3;
+        grid-column: 1 / span 2;
+        flex-direction: column;
+    }
+
+    .charts {
+        width: 100%;
+    }
+
+    .loadMore {
+        grid-row: 4;
+        grid-column: 1 / span 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    :root {
+        --font-size-base: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        flex-wrap: wrap !important;
+    }
+
+    .logoContainer {
+        width: 100%;
+        border-right: none;
+        border-bottom: solid var(--primary-color);
+    }
+
+    .searchContainer {
+        width: 100%;
+        padding: 15px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .searchForm {
+        width: 100%;
+    }
+
+    .dropdownBtn {
+        width: 100%;
+    }
+
+    .navRight {
+        width: 100%;
+        border-left: none;
+        border-top: solid var(--primary-color);
+        justify-content: center;
+        gap: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .gridLayout {
+        grid-template-columns: 1fr;
+    }
+
+    .reports, .infoCardContainer, .graphContainer, .loadMore {
+        grid-column: 1;
+    }
+
+    .infoCard {
+        min-width: 100%;
+    }
+
+    .invoiceGraphInfoIndicator {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --font-size-base: 12px;
+    }
+
+    .logoContainer a {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .logoContainer p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .userInfo {
+        display: none;
+    }
+
+    .searchContainer, .infoCardContainer, .graphContainer, .loadMore, .reports {
+        width: 100%;
+        padding: 0;
+    }
+
+    .gridLayout {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .infoCard, .charts, .loadMore, .reports {
+        width: 100%;
+    }
+}
