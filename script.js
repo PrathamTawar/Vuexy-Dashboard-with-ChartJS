@@ -187,7 +187,7 @@ new Chart(ctx, {
     data: {
         labels: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
         datasets: [{
-            label: '',
+            label: 'This week',
             data: [10000, 41000, 23000, 60000, 55000, 70000, 45000, 50000],
             borderColor: '#3b82f6',
             backgroundColor: '#3b82f6',
@@ -197,7 +197,7 @@ new Chart(ctx, {
             pointHoverRadius: 6,
             tension: 0.3
         }, {
-            label: '',
+            label: 'Last week',
             data: [25000, 20000, 40000, 30000, 50000, 20000, 40000],
             borderColor: '#ef4444',
             backgroundColor: '#ef4444',
